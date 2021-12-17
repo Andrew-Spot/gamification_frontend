@@ -692,7 +692,7 @@ pod/example-1-7f8b5549bb-4k8rp   0/1     ContainerCreating   0          83s   &l
 NAME                                                STATUS   ROLES    AGE   VERSION              INTERNAL-IP      EXTERNAL-IP      OS-IMAGE         KERNEL-VERSION                CONTAINER-RUNTIME
 node/ip-192-168-46-105.us-west-2.compute.internal   Ready    &lt;none&gt;   45s   v1.19.6-eks-49a6c0   192.168.46.105   35.160.241.120   Amazon Linux 2   5.4.117-58.216.amzn2.x86_64   docker://19.3.13
 node/ip-192-168-64-43.us-west-2.compute.internal    Ready    &lt;none&gt;   52m   v1.19.6-eks-49a6c0   192.168.64.43    54.202.238.83    Amazon Linux 2   5.4.117-58.216.amzn2.x86_64   docker://19.3.13
-</code></pre><p>Describe the node to verify the nodeLabels are assigned to it, run <code>kubectl describe &lt;node-name&gt;</code></p>
+</code></pre><p>Describe the node to verify the nodeLabels are assigned to it, run <code>kubectl describe node &lt;node-name&gt;</code></p>
 <pre><code>➜ kubectl describe node ip-192-168-46-105.us-west-2.compute.internal                                                                                                                                                                        21/06/14 | 12:26:10
 Name:               ip-192-168-46-105.us-west-2.compute.internal
 Roles:              &lt;none&gt;
